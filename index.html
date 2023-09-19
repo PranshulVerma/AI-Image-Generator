@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AI-Image Generator</title>
+</head>
+<body>
+    <img src="img.png" alt="img" class="img">
+
+    <div class="container">
+        <h1>AI-Image Generator</h1>
+        <p>Create, inspire, and transform. Let the power of AI turn your vision 
+        into breathtaking reality.</p>
+        <p>Write your Prompt here to generate images! </p>
+        <form class="gen-form">
+            <input type="text" id="user-prompt"
+            placeholder="Type your prompt here..."
+            autocomplete="off">
+            <button type="button" id="generate">Generate</button>
+        </form>
+        <div class="result">
+            <div id="loading">Generating Please Wait...</div>
+            <div id="image-grid"></div>
+        </div>
+    </div>
+    <script src="backend.js"></script>
+</body>
+</html>
