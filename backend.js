@@ -25,7 +25,7 @@ async function generateIMG(input){
     for(let i=0;i<maxImages;i++)
     {
         const randomNumber = randomNum(1,10000);
-        const prompt = `Generate a highly realistic and attractive HD image with intricate details of ${input} ${randomNumber}`;
+        const prompt = `Generate a highly realistic and attractive HD image with intricate details of ${input} and ${randomNumber}`;
         const response = await fetch(
         "https://api-inference.huggingface.co/models/SG161222/Realistic_Vision_V1.4",
         {
